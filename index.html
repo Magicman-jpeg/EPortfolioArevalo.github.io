@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPortfolio – Jayclifferson Arevalo</title>
+  <meta name="description" content="E-Portfolio of Jayclifferson P. Arevalo – Object-Oriented Programming Midterm Outputs" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+<body>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav>
+  <a href="#home" class="nav-logo" data-page="home">JA<span>.</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#home"     data-page="home">Home</a></li>
+    <li><a href="#midterm"  data-page="midterm">Midterm</a></li>
+    <li><a href="#contact"  data-page="contact">Contact</a></li>
+  </ul>
+
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ══════════════════ HOME PAGE ══════════════════ -->
+<div class="page active" id="home">
+  <div class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+
+    <div class="hero-tag">✦ E-Portfolio </div>
+
+    <h1>
+      Jayclifferson<br>
+      <span class="highlight">P. Arevalo</span>
+    </h1>
+
+    <p class="hero-sub">
+      Hello guys and gals and non binary pals! Welcome to my E-Portfolio. This site presents my <strong>Midterm outputs</strong> for
+      Object-Oriented Programming which is essentially just activities, seatworks, and quizzes that
+      demonstrate core OOP concepts in Java.
+    </p>
+
+    <div class="hero-meta">
+      <div class="meta-chip">
+        <span class="icon">📚</span>
+        <div>Course: <strong>Object-Oriented Programming</strong></div>
+      </div>
+      <div class="meta-chip">
+        <span class="icon">🏫</span>
+        <div>School: PUP Sta.Mesa <strong>Section — BSIT 2-3</strong></div>
+      </div>
+      <div class="meta-chip">
+        <span class="icon">☕</span>
+        <div>Language: <strong>Java</strong></div>
+      </div>
+    </div>
+
+    <button id="cta-btn" class="hero-cta">
+      View Midterm Projects →
+    </button>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <p class="section-label">About this Portfolio</p>
+      <h2 class="section-title">What's Inside</h2>
+      <div class="divider"></div>
+      <p class="section-desc">
+        Essentially, this e portfolio of mine is essentialy just a collection and then presents 
+        all the midterm outputs for the course. Object-Oriented Programming. Each of these projects 
+        is accompanied by an embedded PDF or image for more efficient viewing, along with a short 
+        personal reflection on what we have learned. The user can navigate through the pages using 
+        the menu above.
+      </p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; margin-top: 2rem;">
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem;">
+        <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">📄</div>
+        <div style="font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem;">Midterm Outputs</div>
+        <div style="color: var(--text-muted); font-size: 0.88rem;">7 Activities + 1 Quiz covering variables, operators, control flow, and etc.</div>
+      </div>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem;">
+        <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">📄</div>
+        <div style="font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem;">Reflections</div>
+        <div style="color: var(--text-muted); font-size: 0.88rem;">Each project has a short personal reflection on key learnings.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Built by Alien X AKA: <span>Jayclifferson P. Arevalo</span> · Object-Oriented Programming
+  </footer>
+</div>
+
+
+<!-- ══════════════════ MIDTERM PAGE ══════════════════ -->
+<div class="page" id="midterm">
+  <div class="section">
+    <div class="section-header">
+      <p class="section-label">Midterm Period</p>
+      <h2 class="section-title">Midterm Projects</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Click any project card to expand and view the embedded file along with a reflection.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ── About Me ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ABOUT</span>
+            <span class="project-title">About Me</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/about-me.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/about-me.pdf</code></span>
+              <a href="pdfs/about-me.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            Writing my About Me project honestly just gave me the opportunity to reflect on who I am as a student and aspiring developer. I’m just essentially showing who I am and what drew me to programming in the first place.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Assignment 1 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ASGN 1</span>
+            <span class="project-title">Introduction to Java</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-assignment-1-intro-java.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-assignment-1-intro-java.pdf</code></span>
+              <a href="pdfs/midterm-assignment-1-intro-java.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            This assignment just introduces my classmate and me to Java's foundational syntax, structure, and also the philosophy behind object-oriented design, giving us a rather solid conceptual framework and tidbits of information before we dive into hands-on coding.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Activity 1 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ACT 1</span>
+            <span class="project-title">Variables</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-activity-1-variables.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-activity-1-variables.pdf</code></span>
+              <a href="pdfs/midterm-activity-1-variables.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            This activity introduced me to declaring and initializing different data types in Java. While also reinforcing how proper variable naming and type selection are fundamental to writing clean, readable code. Which gave me a huge boost on knowledge on what are the tidbits of quirks that Java have.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Activity 2 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ACT 2</span>
+            <span class="project-title">Operators</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-activity-2-operators.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-activity-2-operators.pdf</code></span>
+              <a href="pdfs/midterm-activity-2-operators.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            When I was working towards arithmetic, relational, and logical operators. This activity really clarified how Java evaluates expressions and the importance of operator precedence in producing correct results. As such, this really is a huge boost in making the next projects that you are gonna see.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Seatwork 2 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">SW 2</span>
+            <span class="project-title">Smart Wallet System</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-seatwork-2-smart-wallet.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-seatwork-2-smart-wallet.pdf</code></span>
+              <a href="pdfs/midterm-seatwork-2-smart-wallet.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            When doing this assignment regarding the Smart Wallet System, it really taught me how to model real-world financial operations using Java classes and conditional logic, making abstract OOP concepts feel tangible and practical. The really fun part is that I get to do the messages while implementing deposit and withdrawal validation, which reinforced the importance of input handling, which really helped my error handling.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Seatwork 3 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">SW 3</span>
+            <span class="project-title">Student Age Analyzer</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-seatwork-3-age-analyzer.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-seatwork-3-age-analyzer.pdf</code></span>
+              <a href="pdfs/midterm-seatwork-3-age-analyzer.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            Now this one, the Student Age Analyzer, really deepened my understanding of using conditional statements and loops to categorize data and produce meaningful output from user input. This project highlighted how even simple programs can really benefit from simple yet clear logic structuring, laying groundwork for more complex decision tree systems.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Activity 3 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ACT 3</span>
+            <span class="project-title">Basic ATM System</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-activity-3-atm.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-activity-3-atm.pdf</code></span>
+              <a href="pdfs/midterm-activity-3-atm.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            Now the Basic ATM System. Since I did the smart wallet system, I just took a menu-driven application in Java, to which we will then just apply loops, switch-case statements, etc. Cleanly designing the transaction flow from scratch made me realize how fun Java is.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Activity 4 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ACT 4</span>
+            <span class="project-title">Scholarship Qualification System</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-activity-4-scholarship.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-activity-4-scholarship.pdf</code></span>
+              <a href="pdfs/midterm-activity-4-scholarship.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            Making the Scholarship Qualification System was quite tricky since it needed to have a multi-criteria decision logic to accurately classify applicants. This activity really showed me that even simple systems can be modeled programmatically and reinforced the value of thorough test case thinking.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Activity 5 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">ACT 5</span>
+            <span class="project-title">Personal Expense Tracker</span>
+          </div>
+          <span class="project-type-badge badge-pdf">PDF</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <embed src="pdfs/midterm-activity-5-expense-tracker.pdf" type="application/pdf">
+            <div class="pdf-placeholder">
+              <span class="pdf-icon">📄</span>
+              <span> <code>pdfs/midterm-activity-5-expense-tracker.pdf</code></span>
+              <a href="pdfs/midterm-activity-5-expense-tracker.pdf" target="_blank" style="color: var(--accent); font-size:0.85rem;">Open file ↗</a>
+            </div>
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            The Personal Expense Tracker now, this one really pushed me to use arrays and iterative logic to accumulate and summarize financial data, essentially tracking cumulative totals and generating summaries. Which in turn really gave me confidence in managing state across multiple operations within a single Java program.
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Quiz 1 ── -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">QUIZ 1</span>
+            <span class="project-title">Midterm Quiz #1</span>
+          </div>
+          <span class="project-type-badge badge-img">PNG</span>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="project-viewer">
+            <img src="images/midterm-quiz-1.png" alt="Midterm Quiz #1 Screenshot"
+                 onerror="this.parentElement.innerHTML='<div class=\'pdf-placeholder\'><span class=\'pdf-icon\'>🖼️</span><span>Image not loaded — upload <code>images/midterm-quiz-1.png</code></span><a href=\'images/midterm-quiz-1.png\' target=\'_blank\' style=\'color: var(--accent); font-size:0.85rem;\'>Open file ↗</a></div>'" />
+          </div>
+          <div class="reflection">
+            <strong>✦ Reflection</strong>
+            Taking the Midterm Quiz just made me reinforced my understanding of Java syntax and OOP theory under timed conditions. Which revealed that I don’t do that well under time pressure situations hahahaha. Nonetheless, it revealed the areas in which I needed to review. The quiz format was a valuable self-study and also an assessment to which will help me to identify gaps and prioritize topics for deeper study before the final term.
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ Midterm OOP ══ -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-num">MIDTERM</span>
+            <span class="project-title">Midterm OOP</span>
+          </div>
+          <div class="project-toggle">+</div>
+        </div>
+        <div class="project-body">
+          <div class="reflection">
+            <strong>❖ Reflection</strong>
+            Essentially my OOP midterm just really challenged me to apply core concepts like classes, methods, and decision structures in practical programs which was shown in the end. I though it would be a make the code experience but no it’s just fill in the blank which is more better in my own opinion. Furthermore the midterm really my coding skills and problem-solving mindset. As such in conclusion I realized that presenting my outputs with clear explanations and also going back and checking the patterns and syntax and also having mnemonics to remember the history of Java really helped me appreciate Java in all of its glory.
+          </div>
+        </div>
+      </div>
+    </div><!-- /projects-grid -->
+  </div>
+
+  <footer>
+    Built by Alien X AKA: <span>Jayclifferson P. Arevalo</span> · Object-Oriented Programming 
+  </footer>
+
+</div>
+
+
+<!-- ══════════════════ CONTACT PAGE ══════════════════ -->
+<div class="page" id="contact">
+  <div class="section">
+    <div class="section-header">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Contact</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Feel free to reach out via any of the platforms below.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a href="mailto:jaycliffersonarevalo81@gmail.com" class="contact-card">
+        <div class="contact-icon-wrap icon-email">📧</div>
+        <div class="contact-info">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">jaycliffersonarevalo81@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/jaycliffersonparevalo/" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon-wrap icon-linkedin">💼</div>
+        <div class="contact-info">
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">jaycliffersonparevalo</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/Magicman-jpeg" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon-wrap icon-github">🐙</div>
+        <div class="contact-info">
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">Magicman-jpeg</div>
+        </div>
+      </a>
+    </div>
+
+    <div style="margin-top: 3.5rem; padding: 2rem; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; text-align: center;">
+      <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 480px; margin: 0 auto; line-height: 1.75;">
+        More info about me I'm a BSIT student currently studying <strong style="color: var(--text);">Object-Oriented Programming</strong>.
+        Hi, my name is Jay Clifferson P. Arevalo, but you can call me Jay. I’m passionate about drawing anime, reading manga and manhwa, and 
+        staying active through exercise. Some of my favorite works include <strong style="color: var(--text);">A Silent Voice, Your Throne, and The Fragrant Flower Blooms with Dignity</strong>.
+
+        I chose to study BS Information Technology because I’m fascinated by both the creative and technical sides of software development. Inspired by Michael Reeves, I see coding as fun, 
+        innovative, and a way to solve problems creatively. My goal is to become a software engineer and contribute to impactful technology.
+
+        I live by a quote from Shinsuke Kita in Haikyuu:
+
+        “You do it right, and you do it every day.”  
+
+        This embodies Kaizen — the philosophy of consistency and daily improvement.
+        In five years, I see myself honing my skills, building meaningful connections, and starting a career in IT. I want to grow steadily, deepen my relationships, and stay true to my 
+        guiding principle that small, consistent efforts lead to big results.
+        If you have questions about my portfolio, collaboration ideas, or just want to connect or even job opportunity hehehe. —
+        my inbox is always open and or just sauce me a follow.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    Built by <span>Jayclifferson P. Arevalo</span> · Object-Oriented Programming ·
+  </footer>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
