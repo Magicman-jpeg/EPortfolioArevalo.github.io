@@ -38,16 +38,14 @@ window.addEventListener('popstate', e => {
 // Initial load
 (function () {
   const hash = location.hash.replace('#', '') || 'home';
-  const valid = ['home', 'midterm', 'contact'];
+  const valid = ['home', 'midterm', 'final', 'contact'];
   navigate(valid.includes(hash) ? hash : 'home', false);
 })();
-
 
 // ─── Mobile nav toggle ─────────────────────────────
 document.querySelector('.nav-toggle').addEventListener('click', () => {
   document.querySelector('.nav-links').classList.toggle('open');
 });
-
 
 // ─── Collapsible Project Cards ──────────────────────
 document.querySelectorAll('.project-header').forEach(header => {
@@ -63,13 +61,11 @@ document.querySelectorAll('.project-header').forEach(header => {
   });
 });
 
-
 // ─── CTA button ────────────────────────────────────
 const ctaBtn = document.getElementById('cta-btn');
 if (ctaBtn) {
   ctaBtn.addEventListener('click', () => navigate('midterm'));
 }
-
 
 // ─── Animate hero elements on load ─────────────────
 window.addEventListener('load', () => {
